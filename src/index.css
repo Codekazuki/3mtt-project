@@ -14,5 +14,8 @@ code {
 .nav-bar {
   color: red;
   background-color: aquamarine;
-  height: 4rem;
+  /* height: 4rem; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
