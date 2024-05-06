@@ -1,7 +1,12 @@
 import "./App.css";
+import Navbar from "./components/Navbar";
 
 function App() {
-  return <div className='App'>3mtt site</div>;
+  return (
+    <div className='App'>
+      <Navbar />
+    </div>
+  );
 }
 
 export default App;
