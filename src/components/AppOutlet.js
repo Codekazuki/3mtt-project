@@ -1,7 +1,11 @@
-import React from "react";
+import { Outlet } from "react-router-dom";
 
-const AppOutlet = () => {
-  return <div>AppOutlet</div>;
-};
+function AppOutlet() {
+  return (
+    <div>
+      <Outlet />
+    </div>
+  );
+}
 
 export default AppOutlet;
