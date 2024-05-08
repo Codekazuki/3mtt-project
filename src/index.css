@@ -44,3 +44,11 @@ code {
 .visibility {
   font-family: cursive;
 }
+.view-more {
+  background-color: rgb(141, 74, 141);
+  padding: 0.5rem 3rem;
+  margin: 2rem;
+  border-radius: 20px;
+  box-shadow: none;
+  outline: none;
+}
