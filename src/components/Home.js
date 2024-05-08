@@ -7,11 +7,11 @@ function Home() {
 
   const fetchRepos = () => {
     fetch(
-      `https://api.github.com/users/codekazuki/repos?page=${currentPage}&per_page=10`
+      `https://api.github.com/users/codekazuki/repos?per_page=8&page=${currentPage}`
     )
       .then((response) => response.json())
       .then((data) => {
-        if (data.length === 0 || data.length < 10) {
+        if (data.length === 0) {
           setShowViewMore("End of Repos");
         } else {
           setUser([...user, ...data]);
