@@ -17,8 +17,8 @@ function Home() {
 
   const userElements = user.map((userElement) => {
     return (
-      <div className='repo-card' key={userElement.id}>
-        <h2 className='repo-name'>{userElement.name}</h2>
+      <div className='card' key={userElement.id}>
+        <h2 className='name'>{userElement.name}</h2>
         <p className='language'>
           Langauge:{" "}
           {userElement.language === null ? "none" : userElement.language}
