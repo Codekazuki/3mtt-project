@@ -1,5 +1,3 @@
-import { FaRegStar, FaRegEye, FaCodeBranch } from "react-icons/fa";
-import { TbGitFork } from "react-icons/tb";
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 
@@ -38,18 +36,10 @@ function RepoDetails() {
       <div className='card'>
         <h2 className='name'>{details.name}</h2>
         <div className='repo-mini-details'>
-          <p>
-            <FaRegStar className='icons' /> Stars: {details.stargazers_count}
-          </p>
-          <p>
-            <FaRegEye className='icons' /> Watch: {details.watchers}
-          </p>
-          <p>
-            <TbGitFork className='icons' /> Forks: {details.forks}
-          </p>
-          <p>
-            <FaCodeBranch className='icons' /> Branches: {branch.length}
-          </p>
+          <p>Stars: {details.stargazers_count}</p>
+          <p>Watch: {details.watchers}</p>
+          <p>Forks: {details.forks}</p>
+          <p>Branches: {branch.length}</p>
         </div>
         <p>
           Main Language: {details.language === null ? "none" : details.language}
