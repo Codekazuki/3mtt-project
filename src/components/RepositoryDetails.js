@@ -1,4 +1,3 @@
-import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 function RepoDetails() {
@@ -36,9 +35,6 @@ function RepoDetails() {
       <div className='card'>
         <h2 className='name'>{details.name}</h2>
         <div className='repo-mini-details'>
-          <p>Stars: {details.stargazers_count}</p>
-          <p>Watch: {details.watchers}</p>
-          <p>Forks: {details.forks}</p>
           <p>Branches: {branch.length}</p>
         </div>
         <p>

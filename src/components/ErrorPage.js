@@ -1,5 +1,3 @@
-import { Link, useRouteError } from "react-router-dom";
-
 function ErrorPage() {
   const error = useRouteError();
   console.error(error);
@@ -13,10 +11,7 @@ function ErrorPage() {
         <i>{error.statusText}</i>
       </p>
       <p>
-        Go to{" "}
-        <Link to='/'>
-          <b>Home page</b>
-        </Link>
+        <b>Home page</b>
       </p>
     </div>
   );

@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 
 function Home() {
   const [user, setUser] = useState([]);
@@ -32,9 +31,8 @@ function Home() {
   const userElements = user.map((userElement) => {
     return (
       <div className='card' key={userElement.id}>
-        <Link to={`/repodetails/${userElement.name}`}>
-          <h2 className='repo-name'>{userElement.name}</h2>
-        </Link>
+        <h2 className='repo-name'>{userElement.name}</h2>
+
         <p className='language'>
           Langauge:{" "}
           {userElement.language === null ? "none" : userElement.language}
